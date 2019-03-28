@@ -1,0 +1,4 @@
+<div *ngFor="let lineItem of lineItems | async">
+  <app-line-item [lineItem]="lineItem" (lineItemSaved)="onLineItemSaved($event)"></app-line-item>
+  
+</div>
